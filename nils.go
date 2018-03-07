@@ -41,7 +41,7 @@ func CountEmptyStrings(maybeEmpty []string) int {
 }
 
 func RemoveEmptyStrings(someEmpty []string, count int) []string {
-	noEmpty := make([]interface{}, len(someEmpty)-count)
+	noEmpty := make([]string, len(someEmpty)-count)
 	j := 0
 	for _, v := range someEmpty {
 		if v != "" {
